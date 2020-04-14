@@ -161,6 +161,18 @@ footer .logos {
     }
 }
 
+@include breakpoint(small down) {
+  .resource.show .grid-x {
+    padding: 0;
+  }
+  
+  .resource.show .media-embeds {
+    margin: $global-margin 0;
+    width: 100%;
+    order: 1;
+  }
+}
+
 // Item Browse
 // =========
 
