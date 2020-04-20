@@ -177,6 +177,14 @@ footer .logos {
 // =========
 
 .omeka-pagination {
+  .button-group {
+    flex-wrap: nowrap;
+  }
+  
+  @include breakpoint(medium down) {
+    width: auto;
+  }
+  
   @include breakpoint(small down) {
     flex-wrap: wrap;    
   }
@@ -535,4 +543,5 @@ footer .logos {
 #guide-nav li:not(:last-of-type) {
   border-bottom: 1px solid $primary-color;
   margin-bottom: .25 * $global-margin;
+  padding-bottom: .25 * $global-padding;
 }
